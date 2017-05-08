@@ -1,23 +1,33 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IdentityButton : MonoBehaviour {
 
-	//private bool none = stuff;
+	public Color femaleColor;
+	public Color maleColor;
 
+	public void Start() {
+		if (GetComponent<IdentityStats>().gender == "Female") {
+			GetComponent<Image>().color = femaleColor;
+		}
+		if (GetComponent<IdentityStats>().gender == "Male") {
+			GetComponent<Image>().color = maleColor;
+		}
+	}
 	public void IdentityButtonClicked () {
-		if (GetComponent<IdentityValues>().firstName == "") {
-			CreateNewIdentityDialogue();
+		if (GetComponent<IdentityStats>().firstName == "") {
+			CreateNewIdentityDial();
 		}
 		else {
-			CreateNewIdentityDialogue();
+			DisplayStats();
 		}
 	}
-	private void CreateNewIdentityDialogue() {
+	private void CreateNewIdentityDial() {
 
 	}
-	private void SelectThisIdentity() {
+	private void DisplayStats() {
 
 	}
 
