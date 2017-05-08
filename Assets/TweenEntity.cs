@@ -44,8 +44,6 @@ public class TweenEntity : MonoBehaviour {
 			}
 			yield return null;
 		}
-
-		print(i);
 	}
 	public void GoToTween(int targetI) {
 		targetIndex = targetI;
