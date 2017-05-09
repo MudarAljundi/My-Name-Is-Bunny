@@ -35,8 +35,6 @@ public class LocalizationManager: MonoBehaviour {
 				localizedText.Add(loadedData.localizationItems[i].key, loadedData.localizationItems[i].value);
 			}
 
-			Debug.Log("Data loaded, dictionary contains: " + localizedText.Count + " entries");
-
 		} else {
 			Debug.LogError("Cannot find file!");
 		}

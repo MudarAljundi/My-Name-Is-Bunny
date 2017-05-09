@@ -13,4 +13,8 @@ public class PlayerStats : MonoBehaviour {
 	//public string mentalStatus = "fair"; // OR happiness. fair, passable, ill, crippling
 	public float diligence = 50f; // out of 100
 
+
+	public int weight = 125;
+	public string height = "5' 5\"";
+
 }
